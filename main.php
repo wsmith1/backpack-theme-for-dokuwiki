@@ -8,7 +8,7 @@
  * You should leave the doctype at the very top - It should
  * always be the very first line of a document.
  *
- * @link   http://wiki.splitbrain.org/wiki:tpl:templates
+ * @link   http://dokuwiki.org/templates
  * @author Andreas Gohr <andi@splitbrain.org>
  */
 
@@ -46,7 +46,7 @@ if (!defined('DOKU_INC')) die();
         [[<?php tpl_link(wl($ID,'do=backlink'),tpl_pagetitle($ID,true),'title="'.$lang['btn_backlink'].'"')?>]]
       </div>
       <div class="logo">
-        <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
+        <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]"')?>
       </div>
 
       <div class="clearer"></div>
@@ -115,7 +115,8 @@ if (!defined('DOKU_INC')) die();
 	        <?php tpl_button('history')?>
 	      </div>
 	      <div class="bar-right" id="bar__bottomright">
-	        <?php tpl_button('subscription')?>
+	        <?php tpl_button('subscribe')?>
+	        <?php tpl_button('subscribens')?>
 	        <?php tpl_button('admin')?>
 	        <?php tpl_button('profile')?>
 	        <?php tpl_button('login')?>
@@ -135,6 +136,8 @@ if (!defined('DOKU_INC')) die();
   <div class="clearer">&nbsp;</div>
 
 
+
+  <?php tpl_license(false);?>
 
 </div>
 <div id="copy"><div id="copywrapper">
