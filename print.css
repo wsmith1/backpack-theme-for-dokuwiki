@@ -63,7 +63,7 @@ a.wikilink1    { text-decoration: underline; }
 
 /* the document */
 div.page {
-  text-align: justify;
+  text-align: left;
 }
 
 /* general headline setup */
