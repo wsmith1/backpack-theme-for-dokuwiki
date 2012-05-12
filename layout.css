@@ -102,8 +102,9 @@ div.dokuwiki div.meta div.doc {
 
 #copy {
   width:800px;
-  margin:0 auto;
+  margin:0.5em auto;
   color:#999;
+  font-size: 50%;
 }
 #copy a:link, #copy a:visited {
   color:#888;
